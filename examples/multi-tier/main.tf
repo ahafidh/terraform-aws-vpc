@@ -15,5 +15,5 @@ module "staging" {
   vpc_enable_dns_hostnames = "true"
   vpc_multi_tier           = "true"
 
-  subnet_availability_zones = "${data.aws_availability_zones.all.names}"
+  subnet_availability_zones = data.aws_availability_zones.all.names
 }
