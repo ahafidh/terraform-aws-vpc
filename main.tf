@@ -8,7 +8,7 @@ provider "random" {
 }
 
 provider "aws" {
-  version = ">=1.42, < 3.0.0"
+  version = ">=1.42, <= 3.5.0"
 }
 
 # Contains local values that are used to increase DRYness of the code.
