@@ -536,5 +536,5 @@ resource "aws_flow_log" "flowlogs_to_s3" {
     map("Environment", var.environment),
     map("ManagedBy", "terraform"))
 
-  depends_on = ["aws_s3_bucket.flowlogs_to_s3"]
+  depends_on = [aws_s3_bucket.flowlogs_to_s3]
 }
